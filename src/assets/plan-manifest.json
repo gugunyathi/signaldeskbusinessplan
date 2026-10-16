@@ -1,268 +1,304 @@
 {
+  "title": "Signal Desk Business Plan",
+  "subtitle": "Strategic Framework for an Autonomous Orchestration Layer for Municipal Infrastructure Platform.",
+  "slideCount": 15,
   "slides": [
     {
       "title": "SIGNAL DESK",
-      "section": "Strategic business plan",
-      "summary": "Community intelligence. Municipal action."
+      "section": "Strategic Business Plan",
+      "summary": "Signal Desk Business Plan"
     },
     {
-      "title": "A validated intake foundation; a commercial model to prove",
-      "section": "Executive summary",
-      "summary": ""
+      "title": "Executive Summary: High-Margin Infrastructure Data Ecosystem",
+      "section": "Executive Summary",
+      "summary": "Commercial deployment of a cloud-based public infrastructure triage & asset-liquidation platform."
     },
     {
-      "title": "Read the plan through three decision lenses",
-      "section": "Contents",
-      "summary": ""
+      "title": "Financial Feasibility & Seed Runway Allocation ($100k)",
+      "section": "Runway Analysis",
+      "summary": "$100,000 seed round funds roughly 18 to 24 months of core runtime."
     },
     {
-      "title": "Conflicting source assumptions are disclosed, not blended",
-      "section": "Source reconciliation",
-      "summary": "S1: supplied text. S2: pitch deck, 15 Oct 2026. S3: supplied growth and expansion plan."
+      "title": "Market Positioning & Go-To-Market (GTM) Strategy",
+      "section": "GTM Strategy",
+      "summary": "Circumventing traditional public sector procurement friction via a bottom-up adoption wedge."
     },
     {
-      "title": "Fragmented signals create a handoff problem",
-      "section": "Problem",
-      "summary": ""
+      "title": "CivicRewards Loyalty Framework",
+      "section": "Product Architecture",
+      "summary": "Maintaining reporting volume and verified field data without increasing operational service costs."
     },
     {
-      "title": "Ward 115 provides depth, not proof of paid demand",
-      "section": "Evidence",
-      "summary": "S3 pp. 3\u20134; historical units must not be added together."
+      "title": "Data Refinement & AI Broker Monetization Timeline",
+      "section": "Data Asset Refinery",
+      "summary": "Data assets increase in valuation as transactional complexity and running history accumulate."
     },
     {
-      "title": "Pilot periods and current intake must stay distinct",
-      "section": "Evidence",
-      "summary": "Do not reconcile different dates or definitions into one traction claim."
+      "title": "5-Year Operational & Accounts Scaling Targets",
+      "section": "Scaling Milestones",
+      "summary": "Account growth across all tiers driving software and data flywheel."
     },
     {
-      "title": "Capture \u2192 link \u2192 act \u2192 verify \u2192 learn",
-      "section": "Product architecture",
-      "summary": ""
+      "title": "Table A: 5-Year Consolidated Financial Projection (P&L)",
+      "section": "Financial Model",
+      "summary": "All figures modeled in USD. Revenue metrics represent mid-year active customer averages."
     },
     {
-      "title": "Expand the orchestration layer, not municipal infrastructure",
-      "section": "Technology",
-      "summary": ""
+      "title": "Operational Cost Architecture & Lean Delivery Framework",
+      "section": "Cost Discipline",
+      "summary": "Structural efficiency ensures operational expenses remain below 2.5% of revenue by Year 5."
     },
     {
-      "title": "Sell evidence to fund free civic participation",
-      "section": "Offer portfolio",
-      "summary": "No signed commercial agreements or validated sponsor prices supplied."
+      "title": "Chart 1: 5-Year Financial Trajectory & AI Lab Data Scaling",
+      "section": "Financial Projections",
+      "summary": "Exponential top-line revenue growth scaling profits while keeping operational headcount lean."
     },
     {
-      "title": "A grounded market starts with identifiable budget owners",
-      "section": "Market",
-      "summary": ""
+      "title": "Charts 2 & 3: Revenue Stream Evolution (Year 1 vs. Year 5)",
+      "section": "Revenue Mix",
+      "summary": "Transition from early B2G/B2B software subscriptions to global AI data asset refinery."
     },
     {
-      "title": "Keep market estimates separate from obtainable revenue",
-      "section": "Market",
-      "summary": "No external market verification commissioned; estimates are not presented as independently substantiated."
+      "title": "Chart 4: Unit Economics — Cost to Serve (CTS) Decay Curve",
+      "section": "Unit Economics",
+      "summary": "Single-ward server costs decrease as system throughput and data amortization scale."
     },
     {
-      "title": "Compete on traceable orchestration and local adoption",
-      "section": "Competitive positioning",
-      "summary": ""
+      "title": "Core Unit Economics & Single-Ward Micro Analysis",
+      "section": "Microeconomics",
+      "summary": "Evaluating the model at the individual Paying Ward level illustrates underlying network efficiency."
     },
     {
-      "title": "Win a bounded scope before scaling the footprint",
-      "section": "Go-to-market",
-      "summary": ""
+      "title": "Data Governance, Privacy (POPIA) & Frontier AI Training",
+      "section": "Governance & Compliance",
+      "summary": "Transforming raw civic messages into clean, legally compliant structured training sets."
     },
     {
-      "title": "First-year delivery follows four evidence gates",
-      "section": "Execution",
-      "summary": "Ward 115 plus up to four additional wards; free users are not counted as paying seats."
-    },
-    {
-      "title": "Three horizons; regional launches remain conditional",
-      "section": "Growth horizons",
-      "summary": ""
-    },
-    {
-      "title": "Hiring must follow revenue and funded delivery capacity",
-      "section": "Team",
-      "summary": "S1 reference FTEs: 5 / 6 / 7 / 9 / 10; blended $45k/year. Founder experience: S2, 10+ and 28+ years."
-    },
-    {
-      "title": "Governed data is a prerequisite, not a monetisation shortcut",
-      "section": "Governance",
-      "summary": ""
-    },
-    {
-      "title": "Principal risks have explicit owners and responses",
-      "section": "Risk register",
-      "summary": ""
-    },
-    {
-      "title": "Financial projections are planning cases, not actual results",
-      "section": "Financial assumptions",
-      "summary": ""
-    },
-    {
-      "title": "Customer counts drive the paid-seat reference case",
-      "section": "Financial drivers",
-      "summary": "S1 model reproduced as an alternative; paid councillor assumptions conflict with S3 free-core strategy."
-    },
-    {
-      "title": "Five-year revenue reaches $581k in the source case",
-      "section": "Revenue forecast",
-      "summary": "US$000; source assumptions, not contracted sales. Data and advertising lack supplied price \u00d7 volume drivers."
-    },
-    {
-      "title": "Revenue scale and cost discipline must converge",
-      "section": "Financial trajectory",
-      "summary": "Source-reference annual results in US$000; editable PowerPoint chart elements."
-    },
-    {
-      "title": "Gross margins rise to 93%; delivery costs need validation",
-      "section": "Direct cost forecast",
-      "summary": "Support, security, data licensing fulfilment and payment processing may add costs not identified in S1."
-    },
-    {
-      "title": "Personnel dominates the operating cost base",
-      "section": "Operating expenditure",
-      "summary": "Hardware is reclassified as capital expenditure only in the illustrative integrated statements below."
-    },
-    {
-      "title": "Integrated profit & loss normalises hardware treatment",
-      "section": "Integrated financials",
-      "summary": "No cash tax assumed due to accumulated losses; no deferred tax asset recognised. Tax eligibility and loss use require local advice."
-    },
-    {
-      "title": "Cash flow exposes the funding requirement",
-      "section": "Integrated financials",
-      "summary": "Equity plugged annually to prevent negative year-end cash, not committed capital. Excludes minimum cash reserve and intra-year timing."
-    },
-    {
-      "title": "Illustrative balance sheet reconciles to the cash model",
-      "section": "Integrated financials",
-      "summary": "No debt or payables assumed. Assets = contributed equity + retained earnings; opening balance assumed zero, not historical accounts."
-    },
-    {
-      "title": "A $100k raise does not fund the supplied staffing plan",
-      "section": "Capital adequacy",
-      "summary": ""
-    },
-    {
-      "title": "Twelve-month bridge makes the early cash gap visible",
-      "section": "Monthly planning",
-      "summary": "S1 Year-1 totals divided evenly by 12; $100k opening cash. Excludes receivables timing; illustrative bridge, not a seasonal acquisition forecast."
-    },
-    {
-      "title": "Free-core strategy requires replacement payer revenue",
-      "section": "Commercial reconciliation",
-      "summary": "Retains all other unvalidated source assumptions. No sponsor prices invented. Year-5 gap $145k = 15 additional $10k contracts before delivery costs."
-    },
-    {
-      "title": "Exit subscription run-rate is not total annual revenue",
-      "section": "Unit economics",
-      "summary": ""
-    },
-    {
-      "title": "Small revenue misses remove Year-5 break-even",
-      "section": "Sensitivity",
-      "summary": "Illustrative proportional revenue changes; COGS fixed conservatively. No probability weights, receivables or additional investment included."
-    },
-    {
-      "title": "The source raise is a gated first tranche",
-      "section": "Use of funds",
-      "summary": ""
-    },
-    {
-      "title": "Approve scale only when evidence and cash align",
-      "section": "Investment recommendation",
-      "summary": ""
-    },
-    {
-      "title": "Management decisions required before external circulation",
-      "section": "Diligence checklist",
-      "summary": "Consulting-inspired presentation; not affiliated with, prepared by, or endorsed by KPMG or McKinsey."
-    },
-    {
-      "title": "Every claim has a source or an assumption label",
-      "section": "Source register",
-      "summary": ""
-    },
-    {
-      "title": "SIGNAL DESK",
-      "section": "Next steps",
-      "summary": "Confirm the payer model. Fund the next evidence gate."
-    },
-    {
-      "title": "Supplied prospectus \u2014 verbatim 1/13",
-      "section": "Appendix / S1",
-      "summary": "Original management text; conflicting assumptions and closing question intentionally preserved."
-    },
-    {
-      "title": "Supplied prospectus \u2014 verbatim 2/13",
-      "section": "Appendix / S1",
-      "summary": "Original management text; conflicting assumptions and closing question intentionally preserved."
-    },
-    {
-      "title": "Supplied prospectus \u2014 verbatim 3/13",
-      "section": "Appendix / S1",
-      "summary": "Original management text; conflicting assumptions and closing question intentionally preserved."
-    },
-    {
-      "title": "Supplied prospectus \u2014 verbatim 4/13",
-      "section": "Appendix / S1",
-      "summary": "Original management text; conflicting assumptions and closing question intentionally preserved."
-    },
-    {
-      "title": "Supplied prospectus \u2014 verbatim 5/13",
-      "section": "Appendix / S1",
-      "summary": "Original management text; conflicting assumptions and closing question intentionally preserved."
-    },
-    {
-      "title": "Supplied prospectus \u2014 verbatim 6/13",
-      "section": "Appendix / S1",
-      "summary": "Original management text; conflicting assumptions and closing question intentionally preserved."
-    },
-    {
-      "title": "Supplied prospectus \u2014 verbatim 7/13",
-      "section": "Appendix / S1",
-      "summary": "Original management text; conflicting assumptions and closing question intentionally preserved."
-    },
-    {
-      "title": "Supplied prospectus \u2014 verbatim 8/13",
-      "section": "Appendix / S1",
-      "summary": "Original management text; conflicting assumptions and closing question intentionally preserved."
-    },
-    {
-      "title": "Supplied prospectus \u2014 verbatim 9/13",
-      "section": "Appendix / S1",
-      "summary": "Original management text; conflicting assumptions and closing question intentionally preserved."
-    },
-    {
-      "title": "Supplied prospectus \u2014 verbatim 10/13",
-      "section": "Appendix / S1",
-      "summary": "Original management text; conflicting assumptions and closing question intentionally preserved."
-    },
-    {
-      "title": "Supplied prospectus \u2014 verbatim 11/13",
-      "section": "Appendix / S1",
-      "summary": "Original management text; conflicting assumptions and closing question intentionally preserved."
-    },
-    {
-      "title": "Supplied prospectus \u2014 verbatim 12/13",
-      "section": "Appendix / S1",
-      "summary": "Original management text; conflicting assumptions and closing question intentionally preserved."
-    },
-    {
-      "title": "Supplied prospectus \u2014 verbatim 13/13",
-      "section": "Appendix / S1",
-      "summary": "Original management text; conflicting assumptions and closing question intentionally preserved."
+      "title": "Summary & Investment Milestones",
+      "section": "Strategic Roadmap",
+      "summary": "Clear execution path from initial seed validation to institutional data scale."
     }
   ],
-  "slideCount": 51,
   "financials": {
-    "revenue": [7700, 41000, 117500, 287000, 581000],
-    "ebitda": [-248400, -268500, -254600, -209500, 5000],
-    "freeCoreRevenue": [4700, 29000, 84500, 209000, 431000],
-    "freeCoreEbitda": [-251400, -280500, -287600, -287500, -145000],
-    "peakFunding": 981000,
-    "cashFunding": 1023753
+    "years": [
+      "Year 1",
+      "Year 2",
+      "Year 3",
+      "Year 4",
+      "Year 5"
+    ],
+    "revenue": [
+      30000,
+      315000,
+      1523000,
+      13261000,
+      17425000
+    ],
+    "cor": [
+      22500,
+      62100,
+      186990,
+      1361520,
+      1760500
+    ],
+    "grossProfit": [
+      7500,
+      252900,
+      1336010,
+      11899480,
+      15664500
+    ],
+    "grossMarginPct": [
+      25,
+      80.3,
+      87.7,
+      89.7,
+      89.9
+    ],
+    "headcount": [
+      3,
+      4,
+      6,
+      9,
+      13
+    ],
+    "payroll": [
+      45000,
+      70000,
+      120000,
+      200000,
+      310000
+    ],
+    "otherOpex": [
+      12000,
+      20000,
+      35000,
+      60000,
+      95000
+    ],
+    "totalOpex": [
+      57000,
+      90000,
+      155000,
+      260000,
+      405000
+    ],
+    "totalExpenses": [
+      79500,
+      152100,
+      341990,
+      1621520,
+      2165500
+    ],
+    "netProfitLoss": [
+      -49500,
+      162900,
+      1181010,
+      11639480,
+      15259500
+    ],
+    "accounts": {
+      "councillors": [
+        100,
+        300,
+        800,
+        1800,
+        3200
+      ],
+      "serviceProviders": [
+        20,
+        50,
+        120,
+        250,
+        500
+      ],
+      "municipalities": [
+        3,
+        8,
+        20,
+        45,
+        90
+      ],
+      "advertisers": [
+        3,
+        8,
+        15,
+        30,
+        50
+      ],
+      "analyticsClients": [
+        1,
+        3,
+        7,
+        15,
+        30
+      ],
+      "dataBrokers": [
+        0,
+        1,
+        2,
+        4,
+        5
+      ]
+    },
+    "y1RevenueDistribution": [
+      {
+        "name": "Ward Councillors Subscriptions",
+        "value": 40,
+        "amount": 12000
+      },
+      {
+        "name": "B2B Service Providers",
+        "value": 40,
+        "amount": 12000
+      },
+      {
+        "name": "Data Analytics Clients",
+        "value": 20,
+        "amount": 6000
+      }
+    ],
+    "y5RevenueDistribution": [
+      {
+        "name": "AI Data Broker Asset Sales",
+        "value": 86.1,
+        "amount": 15000000
+      },
+      {
+        "name": "Municipal Enterprise Tiers",
+        "value": 6.2,
+        "amount": 1080000
+      },
+      {
+        "name": "Data Analytics Clients",
+        "value": 2.1,
+        "amount": 365000
+      },
+      {
+        "name": "Premium Advertisers Network",
+        "value": 1.7,
+        "amount": 300000
+      },
+      {
+        "name": "B2B Service Providers",
+        "value": 1.4,
+        "amount": 245000
+      },
+      {
+        "name": "Ward Councillors Subscriptions",
+        "value": 0.2,
+        "amount": 35000
+      },
+      {
+        "name": "Others / Ancillary",
+        "value": 2.3,
+        "amount": 400000
+      }
+    ],
+    "unitEconomics": {
+      "monthlyCostToServe": [
+        {
+          "year": "Year 1",
+          "cost": 18
+        },
+        {
+          "year": "Year 2",
+          "cost": 6.2
+        },
+        {
+          "year": "Year 3",
+          "cost": 4.8
+        },
+        {
+          "year": "Year 4",
+          "cost": 3.8
+        },
+        {
+          "year": "Year 5",
+          "cost": 3.25
+        }
+      ],
+      "blendedWardRevenue": 20,
+      "annualWardRevenue": 240,
+      "variableTicketCost": 0.02,
+      "monthlyTickets": 150,
+      "variableTokenCost": 3,
+      "serverOverheadY1": 15,
+      "totalCtsY1": 18,
+      "totalCtsY5": 3.25,
+      "cac": 45
+    },
+    "runway": {
+      "seedCapital": 100000,
+      "sunkAssets": 30000,
+      "netCashWorkingCapital": 70000,
+      "annualCloudBaseline": 6000,
+      "annualClaudeApiBaseline": 12000,
+      "fixedInfrastructureAnnual": 18000,
+      "y1Opex": 57000,
+      "totalY1BaselineOutflows": 75000,
+      "monthsRunwayMin": 18,
+      "monthsRunwayMax": 24
+    }
   }
 }

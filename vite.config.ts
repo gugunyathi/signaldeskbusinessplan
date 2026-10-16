@@ -7,6 +7,34 @@
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 export default defineConfig({
+  vite: {
+    plugins: [
+      {
+        name: "download-headers",
+        configureServer(server) {
+          server.middlewares.use((req, res, next) => {
+            if (req.url?.includes("Signal_Desk_Business_Plan.pdf")) {
+              res.setHeader(
+                "Content-Disposition",
+                'attachment; filename="Signal_Desk_Business_Plan.pdf"',
+              );
+              res.setHeader("Content-Type", "application/pdf");
+            } else if (req.url?.includes("Signal_Desk_Business_Plan.pptx")) {
+              res.setHeader(
+                "Content-Disposition",
+                'attachment; filename="Signal_Desk_Business_Plan.pptx"',
+              );
+              res.setHeader(
+                "Content-Type",
+                "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+              );
+            }
+            next();
+          });
+        },
+      },
+    ],
+  },
   tanstackStart: {
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
     // nitro/vite builds from this
