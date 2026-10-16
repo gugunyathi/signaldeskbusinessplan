@@ -47,7 +47,7 @@ def table(title,section,headers,rows,sub='',size=18):
    cell=tb.cell(r,j);cell.text=str(value);cell.margin_left=Inches(.12);cell.margin_top=Inches(.065);cell.margin_bottom=Inches(.035)
    cell.fill.solid();cell.fill.fore_color.rgb=RGBColor.from_string(C['ink' if r==0 else ('light' if r%2 else 'white')])
    for p in cell.text_frame.paragraphs:
-    p.font.name='Arial';p.font.size=Pt(size);p.font.bold=r==0;p.font.color.rgb=RGBColor.from_string(C['white' if r==0 else 'ink'])
+    p.font.name='Arial';p.font.size=Pt(min(size,17));p.font.bold=r==0;p.font.color.rgb=RGBColor.from_string(C['white' if r==0 else 'ink']);p.space_after=Pt(0)
  return s
 
 def chart(s,series,x=.65,y=3,w=8,h=3.55):
@@ -57,6 +57,11 @@ def chart(s,series,x=.65,y=3,w=8,h=3.55):
  ch.has_legend=True;ch.legend.position=XL_LEGEND_POSITION.BOTTOM;ch.legend.font.name='Arial';ch.legend.font.size=Pt(12)
  for i,ser in enumerate(ch.series):ser.format.fill.solid();ser.format.fill.fore_color.rgb=RGBColor.from_string(C[['blue','green','red'][i%3]])
  ch.category_axis.tick_labels.font.name='Arial';ch.category_axis.tick_labels.font.size=Pt(12);ch.value_axis.tick_labels.font.size=Pt(12)
+ # python-pptx emits negative axis identifiers; OOXML requires unsigned values.
+ for element in ch._chartSpace.iter():
+  if element.tag.rsplit('}',1)[-1] in ('axId','crossAx'):
+   value=element.get('val')
+   if value and int(value)<0:element.set('val',str(int(value)+2**32))
  return ch
 
 rev=[7700,41000,117500,287000,581000];coun=[3000,12000,33000,78000,150000];biz=[1500,6000,16500,39000,81000];mun=[0,5000,20000,50000,110000];data=[2000,12000,30000,75000,150000];ads=[1200,6000,18000,45000,90000]
@@ -102,7 +107,7 @@ ar=[r*30/365 for r in rev];delta=[v-(ar[i-1] if i else 0) for i,v in enumerate(a
 fund=[-min(v,0) for v in cf];cash=[];acc=0
 for f,fin in zip(cf,fund):acc+=f+fin;cash.append(acc)
 netppe=[sum(hw[:i+1])-sum(dep[:i+1]) for i in range(5)];ret=[sum(ebit[:i+1]) for i in range(5)];equity=[sum(fund[:i+1]) for i in range(5)]
-table('Integrated profit & loss normalises hardware treatment','Integrated financials',H,[row('Revenue',rev),row('Gross profit',[r-c for r,c in zip(rev,cogs)]),row('Normalised EBITDA',norm),row('Depreciation',[-v for v in dep]),row('EBIT / net income',ebit),row('Source EBITDA (comparison)',ebitda)],sub='All EBIT years remain negative. Illustrative no cash tax / no deferred tax asset; loss carryforwards and tax law need confirmation.',size=18)
+table('Integrated profit & loss normalises hardware treatment','Integrated financials',H,[row('Revenue',rev),row('Gross profit',[r-c for r,c in zip(rev,cogs)]),row('Normalised EBITDA',norm),row('Depreciation',[-v for v in dep]),row('EBIT / net income',ebit),row('Source EBITDA (comparison)',ebitda)],sub='No cash tax assumed due to accumulated losses; no deferred tax asset recognised. Tax eligibility and loss use require local advice.',size=18)
 table('Cash flow exposes the funding requirement','Integrated financials',H,[row('Normalised EBITDA',norm),row('Increase in receivables',[-v for v in delta]),row('Hardware capex',[-v for v in hw]),row('Pre-financing cash flow',cf),row('Illustrative equity required',fund),row('Closing cash',cash)],sub='Equity plugged annually to prevent negative year-end cash, not committed capital. Excludes minimum cash reserve and intra-year timing.',size=18)
 table('Illustrative balance sheet reconciles to the cash model','Integrated financials',H,[row('Cash',cash),row('Receivables',ar),row('Net hardware assets',netppe),row('Total assets',[a+b+c for a,b,c in zip(cash,ar,netppe)]),row('Cumulative equity injected',equity),row('Accumulated retained losses',ret)],sub='No debt or payables assumed. Assets = contributed equity + retained earnings; opening balance assumed zero, not historical accounts.',size=18)
 blocks('A $100k raise does not fund the supplied staffing plan','Capital adequacy',[('4.8 months','$248.4k Year-1 source loss ÷ 12 = $20.7k monthly burn. $100k covers 4.83 months under an even-burn simplification.'),('$981k','Peak cumulative source EBITDA deficit through Y4, before working capital or cash buffers. $881k above the proposed first tranche.'),(f'${sum(fund)/1000:,.1f}k','Illustrative total equity to maintain non-negative year-end cash with 30-day receivables. Additional reserves and monthly peaks remain unfunded.')])
@@ -132,7 +137,8 @@ for line in raw.splitlines():
 if chunk:chunks.append(chunk)
 for i,lines in enumerate(chunks):
  s=new(f'Supplied prospectus — verbatim {i+1}/{len(chunks)}','Appendix / S1','Original management text; conflicting assumptions and closing question intentionally preserved.')
- text(s,'\n'.join(lines),.6,2.95,12.05,3.9,13)
+ box=text(s,'\n'.join(lines),.6,2.95,12.05,3.9,13)
+ for p in box.text_frame.paragraphs:p.space_after=Pt(0)
  s.notes_slide.notes_text_frame.text='Verbatim source excerpt:\n'+'\n'.join(lines)
 # Full original retained also as source notes on first appendix slide.
 P.core_properties.title='Signal Desk — Strategic Business Plan & Financial Projections'
