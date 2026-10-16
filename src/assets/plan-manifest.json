@@ -1,0 +1,292 @@
+{
+  "slides": [
+    {
+      "title": "SIGNAL DESK",
+      "section": "Strategic business plan",
+      "summary": "Community intelligence. Municipal action."
+    },
+    {
+      "title": "A validated intake foundation; a commercial model to prove",
+      "section": "Executive summary",
+      "summary": ""
+    },
+    {
+      "title": "Read the plan through three decision lenses",
+      "section": "Contents",
+      "summary": ""
+    },
+    {
+      "title": "Conflicting source assumptions are disclosed, not blended",
+      "section": "Source reconciliation",
+      "summary": "S1: supplied text. S2: pitch deck, 15 Oct 2026. S3: supplied growth and expansion plan."
+    },
+    {
+      "title": "Fragmented signals create a handoff problem",
+      "section": "Problem",
+      "summary": ""
+    },
+    {
+      "title": "Ward 115 provides depth, not proof of paid demand",
+      "section": "Evidence",
+      "summary": "S3 pp. 3\u20134; historical units must not be added together."
+    },
+    {
+      "title": "Pilot periods and current intake must stay distinct",
+      "section": "Evidence",
+      "summary": "Do not reconcile different dates or definitions into one traction claim."
+    },
+    {
+      "title": "Capture \u2192 link \u2192 act \u2192 verify \u2192 learn",
+      "section": "Product architecture",
+      "summary": ""
+    },
+    {
+      "title": "Expand the orchestration layer, not municipal infrastructure",
+      "section": "Technology",
+      "summary": ""
+    },
+    {
+      "title": "Sell evidence to fund free civic participation",
+      "section": "Offer portfolio",
+      "summary": "No signed commercial agreements or validated sponsor prices supplied."
+    },
+    {
+      "title": "A grounded market starts with identifiable budget owners",
+      "section": "Market",
+      "summary": ""
+    },
+    {
+      "title": "Keep market estimates separate from obtainable revenue",
+      "section": "Market",
+      "summary": "No external market verification commissioned; estimates are not presented as independently substantiated."
+    },
+    {
+      "title": "Compete on traceable orchestration and local adoption",
+      "section": "Competitive positioning",
+      "summary": ""
+    },
+    {
+      "title": "Win a bounded scope before scaling the footprint",
+      "section": "Go-to-market",
+      "summary": ""
+    },
+    {
+      "title": "First-year delivery follows four evidence gates",
+      "section": "Execution",
+      "summary": "Ward 115 plus up to four additional wards; free users are not counted as paying seats."
+    },
+    {
+      "title": "Three horizons; regional launches remain conditional",
+      "section": "Growth horizons",
+      "summary": ""
+    },
+    {
+      "title": "Hiring must follow revenue and funded delivery capacity",
+      "section": "Team",
+      "summary": "S1 reference FTEs: 5 / 6 / 7 / 9 / 10; blended $45k/year. Founder experience: S2, 10+ and 28+ years."
+    },
+    {
+      "title": "Governed data is a prerequisite, not a monetisation shortcut",
+      "section": "Governance",
+      "summary": ""
+    },
+    {
+      "title": "Principal risks have explicit owners and responses",
+      "section": "Risk register",
+      "summary": ""
+    },
+    {
+      "title": "Financial projections are planning cases, not actual results",
+      "section": "Financial assumptions",
+      "summary": ""
+    },
+    {
+      "title": "Customer counts drive the paid-seat reference case",
+      "section": "Financial drivers",
+      "summary": "S1 model reproduced as an alternative; paid councillor assumptions conflict with S3 free-core strategy."
+    },
+    {
+      "title": "Five-year revenue reaches $581k in the source case",
+      "section": "Revenue forecast",
+      "summary": "US$000; source assumptions, not contracted sales. Data and advertising lack supplied price \u00d7 volume drivers."
+    },
+    {
+      "title": "Revenue scale and cost discipline must converge",
+      "section": "Financial trajectory",
+      "summary": "Source-reference annual results in US$000; native editable chart."
+    },
+    {
+      "title": "Gross margins rise to 93%; delivery costs need validation",
+      "section": "Direct cost forecast",
+      "summary": "Support, security, data licensing fulfilment and payment processing may add costs not identified in S1."
+    },
+    {
+      "title": "Personnel dominates the operating cost base",
+      "section": "Operating expenditure",
+      "summary": "Hardware is reclassified as capital expenditure only in the illustrative integrated statements below."
+    },
+    {
+      "title": "Integrated profit & loss normalises hardware treatment",
+      "section": "Integrated financials",
+      "summary": "All EBIT years remain negative. Illustrative no cash tax / no deferred tax asset; loss carryforwards and tax law need confirmation."
+    },
+    {
+      "title": "Cash flow exposes the funding requirement",
+      "section": "Integrated financials",
+      "summary": "Equity plugged annually to prevent negative year-end cash, not committed capital. Excludes minimum cash reserve and intra-year timing."
+    },
+    {
+      "title": "Illustrative balance sheet reconciles to the cash model",
+      "section": "Integrated financials",
+      "summary": "No debt or payables assumed. Assets = contributed equity + retained earnings; opening balance assumed zero, not historical accounts."
+    },
+    {
+      "title": "A $100k raise does not fund the supplied staffing plan",
+      "section": "Capital adequacy",
+      "summary": ""
+    },
+    {
+      "title": "Twelve-month bridge makes the early cash gap visible",
+      "section": "Monthly planning",
+      "summary": "S1 Year-1 totals divided evenly by 12; $100k opening cash. Excludes receivables timing; illustrative bridge, not a seasonal acquisition forecast."
+    },
+    {
+      "title": "Free-core strategy requires replacement payer revenue",
+      "section": "Commercial reconciliation",
+      "summary": "Retains all other unvalidated source assumptions. No sponsor prices invented. Year-5 gap $145k = 15 additional $10k contracts before delivery costs."
+    },
+    {
+      "title": "Exit subscription run-rate is not total annual revenue",
+      "section": "Unit economics",
+      "summary": ""
+    },
+    {
+      "title": "Small revenue misses remove Year-5 break-even",
+      "section": "Sensitivity",
+      "summary": "Illustrative proportional revenue changes; COGS fixed conservatively. No probability weights, receivables or additional investment included."
+    },
+    {
+      "title": "The source raise is a gated first tranche",
+      "section": "Use of funds",
+      "summary": ""
+    },
+    {
+      "title": "Approve scale only when evidence and cash align",
+      "section": "Investment recommendation",
+      "summary": ""
+    },
+    {
+      "title": "Management decisions required before external circulation",
+      "section": "Diligence checklist",
+      "summary": "Consulting-inspired presentation; not affiliated with, prepared by, or endorsed by KPMG or McKinsey."
+    },
+    {
+      "title": "Every claim has a source or an assumption label",
+      "section": "Source register",
+      "summary": ""
+    },
+    {
+      "title": "SIGNAL DESK",
+      "section": "Next steps",
+      "summary": "Confirm the payer model. Fund the next evidence gate."
+    },
+    {
+      "title": "Supplied prospectus \u2014 verbatim 1/13",
+      "section": "Appendix / S1",
+      "summary": "Original management text; conflicting assumptions and closing question intentionally preserved."
+    },
+    {
+      "title": "Supplied prospectus \u2014 verbatim 2/13",
+      "section": "Appendix / S1",
+      "summary": "Original management text; conflicting assumptions and closing question intentionally preserved."
+    },
+    {
+      "title": "Supplied prospectus \u2014 verbatim 3/13",
+      "section": "Appendix / S1",
+      "summary": "Original management text; conflicting assumptions and closing question intentionally preserved."
+    },
+    {
+      "title": "Supplied prospectus \u2014 verbatim 4/13",
+      "section": "Appendix / S1",
+      "summary": "Original management text; conflicting assumptions and closing question intentionally preserved."
+    },
+    {
+      "title": "Supplied prospectus \u2014 verbatim 5/13",
+      "section": "Appendix / S1",
+      "summary": "Original management text; conflicting assumptions and closing question intentionally preserved."
+    },
+    {
+      "title": "Supplied prospectus \u2014 verbatim 6/13",
+      "section": "Appendix / S1",
+      "summary": "Original management text; conflicting assumptions and closing question intentionally preserved."
+    },
+    {
+      "title": "Supplied prospectus \u2014 verbatim 7/13",
+      "section": "Appendix / S1",
+      "summary": "Original management text; conflicting assumptions and closing question intentionally preserved."
+    },
+    {
+      "title": "Supplied prospectus \u2014 verbatim 8/13",
+      "section": "Appendix / S1",
+      "summary": "Original management text; conflicting assumptions and closing question intentionally preserved."
+    },
+    {
+      "title": "Supplied prospectus \u2014 verbatim 9/13",
+      "section": "Appendix / S1",
+      "summary": "Original management text; conflicting assumptions and closing question intentionally preserved."
+    },
+    {
+      "title": "Supplied prospectus \u2014 verbatim 10/13",
+      "section": "Appendix / S1",
+      "summary": "Original management text; conflicting assumptions and closing question intentionally preserved."
+    },
+    {
+      "title": "Supplied prospectus \u2014 verbatim 11/13",
+      "section": "Appendix / S1",
+      "summary": "Original management text; conflicting assumptions and closing question intentionally preserved."
+    },
+    {
+      "title": "Supplied prospectus \u2014 verbatim 12/13",
+      "section": "Appendix / S1",
+      "summary": "Original management text; conflicting assumptions and closing question intentionally preserved."
+    },
+    {
+      "title": "Supplied prospectus \u2014 verbatim 13/13",
+      "section": "Appendix / S1",
+      "summary": "Original management text; conflicting assumptions and closing question intentionally preserved."
+    }
+  ],
+  "slideCount": 51,
+  "financials": {
+    "revenue": [
+      7700,
+      41000,
+      117500,
+      287000,
+      581000
+    ],
+    "ebitda": [
+      -248400,
+      -268500,
+      -254600,
+      -209500,
+      5000
+    ],
+    "freeCoreRevenue": [
+      4700,
+      29000,
+      84500,
+      209000,
+      431000
+    ],
+    "freeCoreEbitda": [
+      -251400,
+      -280500,
+      -287600,
+      -287500,
+      -145000
+    ],
+    "peakFunding": 981000,
+    "cashFunding": 1023753
+  }
+}
