@@ -9,7 +9,10 @@ describe("Source financial rules", () => {
     expect(plan.financials.ebitda).toEqual([-248400, -268500, -254600, -209500, 5000]);
   });
   it("removes $150,000 Year-5 councillor revenue for free core access", () => {
-    expect(plan.financials.revenue[4] - plan.financials.freeCoreRevenue[4]).toBe(150000);
+    const revenue = plan.financials.revenue[4];
+    const freeRevenue = plan.financials.freeCoreRevenue[4];
+    if (revenue === undefined || freeRevenue === undefined) throw new Error("Missing Year-5 projection");
+    expect(revenue - freeRevenue).toBe(150000);
     expect(plan.financials.freeCoreEbitda[4]).toBe(-145000);
   });
 });
