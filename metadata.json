@@ -1,0 +1,6 @@
+{
+  "name": "Signal Desk | Business Plan",
+  "description": "Signal Desk strategic business plan and financial projections.",
+  "permissions": [],
+  "capabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

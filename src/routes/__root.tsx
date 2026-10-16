@@ -79,10 +79,16 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Signal Desk | Business Plan" },
-      { name: "description", content: "Signal Desk strategic business plan and financial projections." },
+      {
+        name: "description",
+        content: "Signal Desk strategic business plan and financial projections.",
+      },
       { name: "author", content: "Lovable" },
       { property: "og:title", content: "Signal Desk | Business Plan" },
-      { property: "og:description", content: "Strategic growth, financial projections and capital planning for Signal Desk." },
+      {
+        property: "og:description",
+        content: "Strategic growth, financial projections and capital planning for Signal Desk.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@Lovable" },

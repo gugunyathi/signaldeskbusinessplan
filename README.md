@@ -1,6 +1,6 @@
 # SignalDeskBusinessPlan
 
-create a KPMG Mckinsey style Startup Business Plan with full financial projections etc etc and include the attached text file.  Use the attached pitch deck and expansion strategy documents for more content and context - and make the finished business plan downloadable as a editable  powerpoint document, amking sure formating etc doesnt break, so use fonts and text styling etc thats already available in powerpoint like Arial font etc. add button for direct download. complete all this within free allocation tokens
+create a KPMG Mckinsey style Startup Business Plan with full financial projections etc etc and include the attached text file. Use the attached pitch deck and expansion strategy documents for more content and context - and make the finished business plan downloadable as a editable powerpoint document, amking sure formating etc doesnt break, so use fonts and text styling etc thats already available in powerpoint like Arial font etc. add button for direct download. complete all this within free allocation tokens
 
 This project was built with [Lovable](https://lovable.dev).
 
