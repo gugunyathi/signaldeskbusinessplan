@@ -51,18 +51,18 @@ def table(title,section,headers,rows,sub='',size=18):
  return s
 
 def chart(s,series,x=.65,y=3,w=8,h=3.55):
- d=CategoryChartData();d.categories=['Y1','Y2','Y3','Y4','Y5']
- for name,values in series:d.add_series(name,values)
- ch=s.shapes.add_chart(XL_CHART_TYPE.COLUMN_CLUSTERED,Inches(x),Inches(y),Inches(w),Inches(h),d).chart
- ch.has_legend=True;ch.legend.position=XL_LEGEND_POSITION.BOTTOM;ch.legend.font.name='Arial';ch.legend.font.size=Pt(12)
- for i,ser in enumerate(ch.series):ser.format.fill.solid();ser.format.fill.fore_color.rgb=RGBColor.from_string(C[['blue','green','red'][i%3]])
- ch.category_axis.tick_labels.font.name='Arial';ch.category_axis.tick_labels.font.size=Pt(12);ch.value_axis.tick_labels.font.size=Pt(12)
- # python-pptx emits negative axis identifiers; OOXML requires unsigned values.
- for element in ch._chartSpace.iter():
-  if element.tag.rsplit('}',1)[-1] in ('axId','crossAx'):
-   value=element.get('val')
-   if value and int(value)<0:element.set('val',str(int(value)+2**32))
- return ch
+ # Editable PowerPoint shapes avoid negative-value rendering differences in office viewers.
+ plot_h=h-.55; left=x+.5;plot_w=w-.65;scale=plot_h/1000;zero=y+600*scale
+ for tick in [-400,-200,0,200,400,600]:
+  yy=zero-tick*scale;rect(s,left,yy,plot_w,.008,'line');text(s,str(tick),x,yy-.1,.45,.23,10,color='muted')
+ for i in range(5):
+  center=left+(i+.5)*plot_w/5
+  for j,(name,values) in enumerate(series):
+   value=values[i];barx=center-.3+j*.31;barh=abs(value)*scale
+   rect(s,barx,zero-barh if value>=0 else zero,.26,max(barh,.015),'blue' if j==0 else 'green')
+  text(s,f'Y{i+1}',center-.2,y+plot_h+.06,.55,.25,11,color='muted')
+ for j,(name,_) in enumerate(series):
+  rect(s,left+1.6+j*1.6,y+h-.16,.16,.12,'blue' if j==0 else 'green');text(s,name,left+1.85+j*1.6,y+h-.21,1.5,.25,11,color='muted')
 
 rev=[7700,41000,117500,287000,581000];coun=[3000,12000,33000,78000,150000];biz=[1500,6000,16500,39000,81000];mun=[0,5000,20000,50000,110000];data=[2000,12000,30000,75000,150000];ads=[1200,6000,18000,45000,90000]
 cogs=[2600,5500,11600,23000,40000];salary=[225000,270000,315000,405000,450000];rent=[9000,10800,12600,16200,18000];hw=[7500,4000,4500,6500,6000];tools=[6000,7200,8400,10800,12000];gtm=[6000,12000,20000,35000,50000]
@@ -97,7 +97,7 @@ table('Principal risks have explicit owners and responses','Risk register',['Ris
 blocks('Financial projections are planning cases, not actual results','Financial assumptions',[('Source reference','S1 prices: $10/month councillor, $50/month business, $10k/year municipality. Annual subscriptions use opening/closing customer averages.'),('Cost basis','$45k/FTE salary, $1.8k/FTE premises, $1.2k/FTE tooling. $0.02 parsing unit implies 10k → 500k annual processing units.'),('Additional assumptions','Illustrative 30-day revenue receivables, no payables, three-year straight-line hardware depreciation, no debt, interest or dividends. USD; no FX assumption.')])
 table('Customer counts drive the paid-seat reference case','Financial drivers',['Year-end units','Y1','Y2','Y3','Y4','Y5'],[['Councillors','50','150','400','900','1,600'],['Businesses','5','15','40','90','180'],['Municipal contracts','0','1','3','7','15'],['Total FTEs','5','6','7','9','10'],['Opening customer baseline','0','Prior Y1','Prior Y2','Prior Y3','Prior Y4']],sub='S1 model reproduced as an alternative; paid councillor assumptions conflict with S3 free-core strategy.',size=18)
 table('Five-year revenue reaches $581k in the source case','Revenue forecast',H,[row('Councillor subscriptions',coun),row('Business subscriptions',biz),row('Municipal contracts',mun),row('Data licensing',data),row('Civic advertising',ads),row('Total revenue',rev)],sub='US$000; source assumptions, not contracted sales. Data and advertising lack supplied price × volume drivers.',size=18)
-s=new('Revenue scale and cost discipline must converge','Financial trajectory','Source-reference annual results in US$000; native editable chart.');chart(s,[('Revenue',[v/1000 for v in rev]),('EBITDA',[v/1000 for v in ebitda])]);text(s,'$581k',9.2,3.2,3.3,.9,42,True,'blue');text(s,'Year-5 annual revenue',9.2,4.1,3.3,.55,19);text(s,'$5k',9.2,5,3.3,.8,36,True,'green');text(s,'Year-5 EBITDA — thin buffer',9.2,5.8,3.3,.6,18)
+s=new('Revenue scale and cost discipline must converge','Financial trajectory','Source-reference annual results in US$000; editable PowerPoint chart elements.');chart(s,[('Revenue',[v/1000 for v in rev]),('EBITDA',[v/1000 for v in ebitda])]);text(s,'$581k',9.2,3.2,3.3,.9,42,True,'blue');text(s,'Year-5 annual revenue',9.2,4.1,3.3,.55,19);text(s,'$5k',9.2,5,3.3,.8,36,True,'green');text(s,'Year-5 EBITDA — thin buffer',9.2,5.8,3.3,.6,18)
 table('Gross margins rise to 93%; delivery costs need validation','Direct cost forecast',H,[row('LLM parsing / token API',[200,700,2000,5000,10000]),row('Cloud compute',[2400,4800,9600,18000,30000]),row('Total COGS',cogs),row('Gross profit',[r-c for r,c in zip(rev,cogs)]),['Gross margin']+[f'{(r-c)/r:.1%}' for r,c in zip(rev,cogs)]],sub='Support, security, data licensing fulfilment and payment processing may add costs not identified in S1.',size=18)
 table('Personnel dominates the operating cost base','Operating expenditure',H,[row('Fully loaded personnel',salary),row('Premises',rent),row('Hardware (source expensed)',hw),row('Software tools',tools),row('GTM / travel / administration',gtm),row('Total source OPEX',opex)],sub='Hardware is reclassified as capital expenditure only in the illustrative integrated statements below.',size=18)
 # Integrated statements: hardware removed from OPEX, straight-line depreciation, 30-day receivables.
